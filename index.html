@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.13.0/d3-legend.js"></script>
+    <script type="text/javascript" src="app_plot2.js"></script>  
+    <script type="text/javascript" src="app_plot3.js"></script>  
+    <script type="text/javascript" src="app_plot4.js"></script>  
+    <script type="text/javascript" src="app_plot5.js"></script> 
+    <script type="text/javascript" src="app_plot1.js"></script> 
+    
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script> 
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <h1>DSC 106 Final Project</h1>
+  
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <div class="navbar-nav ml-auto">
+            <div class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbar-dropdown-menu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Personal Information
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbar-dropdown-menu">
+                <h5>Name: Jinxin Xiao</h5>
+                <h5>PID: A16686562</h5>
+              </div>
+            </div>
+  
+          </div> 
+  
+        </div> 
+      </nav>
+
+      <div id="title_board">
+        <div id="title_infor">
+            <h1 class="title" id="main_title">How much will you earn on Data Science in US?</h1>
+            <p id="describle">Data science has become the revolutionary technology that everyone 
+            seems to be talking about. Data science, dubbed "the sexiest job of the 21st 
+            century," is such a buzzword that few people know what its technology really means. 
+            Linkedin found in the latest survey of related occupations that machine learning and 
+            data science engineers have surpassed traditional software engineers to become the 
+            highest paid group, with a median annual salary of $129,000. IBM predicts that in 
+            the next few years, the demand for data science jobs will soar by 28%. Nowadays, 
+            Data Science is undoubtedly one of the most popular majors for studying abroad, 
+            and the competition for data science majors is becoming increasingly fierce. 
+            What to learn? How about employment?</p>
+        </div>
+        <div id="some_picture"></div>
+      </div>
+
+
+      <div id="first" class="row">
+        <div id="plot_1st" class="center_plot col-md boxy">
+        </div>
+
+        <div id="first_text" class="col-md boxy">
+          <h4>Introduce：</h4>
+        </div>
+
+      </div>
+
+      <div id="second" class="row">
+        <div class="col-md boxy">
+        <div id="radio_q2" class="center_plot">
+            <input type="radio" id="q2_c" name="region" value="company" checked="checked">
+            <label for="company">Check by Company Sector</label>
+            <input type="radio" id="q2_t" name="region" value="type">
+            <label for="type">Check by Company Type</label>
+        </div>
+        <div id="plot_2nd" class="center_plot">
+        </div>
+      </div>
+
+
+        <div id="second_text" class="col-md boxy">
+          <h4>Introduce：</h4>
+        </div>
+
+      </div>
+
+
+
+      <div id="third">
+        <div id="plot_3rd" class="center_plot col-md-6 boxy">
+        </div>
+
+        <div id="third_text" class="col-md boxy">
+          <h4>Introduce：</h4>
+          <p>First, we divide the income into three parts. When the income is lower 
+            than 97279, it is represented by red; when the income is between 97279 
+            and 194558, it is represented by blue; when the income is greater than 
+            194558, it is represented by red. So in this image, marks have lines, 
+            and channels have positions, colors, and sizes. <br>In this image, most 
+            people work in California, or work remotely, and the income of the two most 
+            people is generally between 97279 and 194558.</p>
+        </div>
+
+      </div>
+
+    <div class="container">
+      <div class="row">
+      <div id="fourth" class="col-md boxy">
+        <div id="plot_4th" class="center_plot">
+        </div>
+
+        <div id="fourth_text" class="col-md boxy">
+          <br>
+          <br>
+          <br>
+          <p><h4>Introduce：</h4>Display the area as the shape of each state, and at 
+            the same time this is the mark, and then use the color gradient to 
+            distinguish the differences between the states and use it as channels. 
+            <br>Taking a closer look, we can see that California and New York are the 
+            two states with the largest population statistics.</p>
+            <p>In addition, I use zoom in and out to make state of choose more easiler.</p>
+        </div>
+      </div>
+
+      <div id="fifth" class="col-md boxy">
+        <div id="radio_q5" class="center_plot">
+            <input type="radio" id="q5_c" name="region_5" value="companys" checked="checked">
+            <label for="companys">Check by Company Sector</label>
+            <input type="radio" id="q5_t" name="region_5" value="types">
+            <label for="types">Check by Company Type</label>
+        </div>
+        <div id="plot_5th" class="center_plot">
+        </div>
+
+        <div id="fifth_text" class="col-md boxy">
+          <p><h4>Introduce：</h4>Here, we use box plot to display, the vertical line 
+            indicates the range of maximum income and minimum income, and the green 
+            rectangle in the middle indicates the range income of 25% to 75%, so 
+            marks have lines and areas, while channels have positions and shapes, 
+            and area to represent. <br>In this picture, we have extracted the 
+            departments and company categories with the largest number of people 
+            through simple processing, and then through simple observation, we can 
+            get that most of the data are extremely unevenly distributed, whether it 
+            is the comparison between departments or the type. In comparison, the gap 
+            between the maximum value and the minimum value is huge, and the median 
+            line indicates that the income does not match the mean. The data between 
+            25% and 75% is not in the center of each group of data, that is, it is not 
+            normally distributed.</p>
+        </div>
+
+      </div>
+    </div>
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

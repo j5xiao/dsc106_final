@@ -1,0 +1,29 @@
+#title_board {
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+    display: flex;
+    
+}
+
+.center_plot {
+    margin: auto;
+    text-align: center;
+}
+
+#first, #second, #third, #fourth, #fifth {
+    margin: 10px;
+    border: solid 2px;
+    border-radius: 5px;
+	color: #2D3E50;
+    font-family: 'Arial';
+	font-weight: bold;  
+}
+
+#plot_1st, #plot_2nd, #plot_3rd, #plot_4th, #plot_5th{
+    margin: 15px;
+}
+
+#first_text {
+    max-width: auto;
+}
